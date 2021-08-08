@@ -49,7 +49,8 @@ If the user don't have a physical keyboard and wants to play it, he can use "key
 
 This code allow to change some variables in order to change the experience (increase the size, game speed, initial snake size, others).
 
-## 📝 Addicional Note
+## 📝 Additional Note
 
 This project was made and tested only for desktops/tablets browsers.
 No responsive design was made for the mobile versions (can or not run, depends of the model).
+Some bugs can be found, since this project was made in 2 days.
