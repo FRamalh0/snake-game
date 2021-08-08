@@ -1,0 +1,51 @@
+<div class="main-game light">
+    <div class="top-bar">
+        <h1>Snake Game</h1>
+        <p>Score: {{score}}</p>
+    </div>
+    <div class="play-area">
+        <div class="board" (click)="moveSnake()" (window:keydown)="onKeyDown($event)">
+            <table>
+                <tr *ngFor="let gr of board">
+                    <th *ngFor="let b of gr" id="{{b}}"></th>
+                </tr>
+            </table>
+        </div>
+        <div *ngIf="!hasStarted" class="start">
+            <p>To start the game, click the button</p>
+            <button (click)="startGame()">Start Game</button>
+            <p>Controls: Arrows keys</p>
+        </div>
+        <div *ngIf="isGameOver" class="game-over">
+            <h3 *ngIf="!hasWon">Game Over!</h3>
+            <h3 *ngIf="hasWon">WIN!</h3>
+            <p>Score: {{score}}</p>
+            <button (click)="restartGame()">Try again!</button>
+        </div>
+    </div>
+    
+    <div *ngIf="isKeysScreen" class="keyScreen">
+        <button (click)="buttonUpPressed()">▲</button>
+        <div class="bottom-keys">
+            <button (click)="buttonLeftPressed()">◄</button>
+            <button (click)="buttonDownPressed()">▼</button>
+            <button (click)="buttonRightPressed()">►</button>
+        </div>
+        
+    </div>  
+    <div class="bottom-bar">
+        <div class="info">
+            <h2>Developed by Francisco Ramalho</h2>
+            <div class="links">
+                <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/francisco-lapão-ramalho-8b882616b">LinkedIn</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/FRamalh0">GitHub</a>
+            </div>
+        </div>
+        <div class="button-actions">
+            <button *ngIf="!isDarkMode" (click)="turnOnOffDarkMode()"><img src="assets/dark-mode.png"></button>
+            <button *ngIf="isDarkMode" (click)="turnOnOffDarkMode()"><img src="assets/light-mode.png"></button>
+            <button *ngIf="!isDarkMode" (click)="turnOnOffKeys()"><img src="assets/keys-light.png"></button>
+            <button *ngIf="isDarkMode" (click)="turnOnOffKeys()"><img src="assets/keys-dark.png"></button>
+        </div>
+    </div>
+</div>

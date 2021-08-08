@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Bahnschrift', 'Calibri', 'Corbel', 'Arial';
+
+    transition: background-color 1000ms linear;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+
+}
+
+.light-mode {
+    background-color: #E6E2E8;
+}
+
+.dark-mode {
+    background-color: #0e0e0e;
+}

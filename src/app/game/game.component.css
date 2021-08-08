@@ -1,0 +1,400 @@
+.main-game {
+    max-width: 500px;
+    max-height: 100vh;
+    border-radius: 20px;
+
+    transition: box-shadow 1000ms linear;
+}
+
+.light {
+    box-shadow: 4px 4px 4px rgb(161, 161, 161);
+}
+
+.dark {
+    box-shadow: 4px 4px 4px black;
+}
+
+.light .top-bar {
+    background-color: #bebebe;
+}
+
+.dark .top-bar {
+    background-color: #4e4e4e;
+}
+
+.top-bar {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: background-color 1000ms linear;
+}
+
+.light .bottom-bar {
+    background-color: #bebebe;
+}
+
+.dark .bottom-bar {
+    background-color: #4e4e4e;
+}
+
+.bottom-bar {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: background-color 1000ms linear;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.button-actions {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 1000ms linear;
+}
+
+.button-actions button {
+    width: 35px;
+    height: 35px;
+
+    padding: 0px;
+    border: 0px;
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 0px rgb(58, 58, 58);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+
+}
+
+.button-actions button:hover {
+    background-color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+
+.dark .button-actions button {
+    background-color: rgb(31, 31, 31);
+}
+
+.dark .button-actions button:hover {
+    background-color: rgb(88, 88, 88);
+    cursor: pointer;
+}
+
+.button-actions button img {
+    width: 25px;
+    height: 25px;
+}
+
+.keyScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 10px 10px 10px;
+}
+
+.light .keyScreen {
+    background-color: rgb(214, 214, 214);
+}
+
+.dark .keyScreen {
+    background-color: rgb(54, 54, 54);
+}
+
+.keyScreen button {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+}
+
+.play-area {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.board {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 5px;
+
+    transition: background-color 1000ms linear;
+}
+
+.start {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    
+    background-color: rgba(138, 138, 138, 0.384);
+
+}
+
+.start p {
+    margin: 50px 0px 40px 0px;
+    text-align: center;
+}
+
+.start button {
+    border-radius: 50px;
+    padding: 10px 25px 10px 25px;
+
+    border: 0;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+.light .start button {
+    background-color: rgb(37, 37, 153);
+}
+
+.light .start button:hover {
+    background-color: rgb(52, 52, 238);
+    cursor: pointer;
+}
+
+.dark .start button {
+    background-color: rgb(67, 67, 255);
+}
+
+.dark .start button:hover {
+    background-color: rgb(39, 39, 155);
+    cursor: pointer;
+}
+
+.game-over {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    
+    background-color: rgba(138, 138, 138, 0.384);
+
+}
+
+.game-over h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+
+    transition: background-color 1000ms linear;
+}
+
+.light .game-over h3 {
+    color: black;
+}
+
+.dark .game-over h3 {
+    color: white;
+}
+
+.game-over p {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.game-over button {
+    border-radius: 50px;
+    padding: 10px 25px 10px 25px;
+
+    border: 0;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.light .game-over button {
+    background-color: rgb(37, 37, 153);
+}
+
+.light .game-over button:hover {
+    background-color: rgb(52, 52, 238);
+    cursor: pointer;
+}
+
+.dark .game-over button {
+    background-color: rgb(67, 67, 255);
+}
+
+.dark .game-over button:hover {
+    background-color: rgb(39, 39, 155);
+    cursor: pointer;
+}
+
+.light .board {
+    background-color: white;
+}
+
+.dark .board {
+    background-color: rgb(32, 32, 32);
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    transition: background-color 1000ms linear;
+}
+
+.light table {
+    background-color: white;
+}
+
+.dark table {
+    background-color: rgb(32, 32, 32);
+}
+
+th {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+}
+
+
+/*FACING UP*/
+table #UP {  
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/*FACING RIGHT*/
+table #RIGHT {  
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/*FACING DOWN*/
+table #DOWN {  
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/*FACING LEFT*/
+table #LEFT {  
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.light #P, .light #UP, .light #RIGHT, .light #DOWN, .light #LEFT {
+    transition: background-color 1000ms linear;
+    background-color: #4cc260;
+}
+
+.dark #P, .dark #UP, .dark #RIGHT, .dark #DOWN, .dark #LEFT {
+    transition: background-color 1000ms linear;
+    background-color: white;
+}
+
+
+table #F {
+    border-radius: 50%;
+}
+
+.light table #F {
+    background-color: #f44729;
+}
+
+.dark table #F {
+    background-color: gold;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 12px 0px 10px 20px;
+
+    transition: color 1000ms linear;
+}
+
+.dark h1 {
+    color:white;
+}
+
+p {
+    font-size: 1em;
+    margin-right: 20px;
+
+    transition: color 1000ms linear;
+}
+
+.dark p {
+    color: white;
+}
+
+h2 { 
+    font-size: 0.8em;
+    margin: 10px 0px 0px 5px;
+
+    transition: color 1000ms linear;
+}
+
+.light h2 {
+    color: #494949;
+}
+
+.dark h2 {
+    color: #cacaca;
+}
+
+.links {
+    margin-bottom: 10px;
+}
+
+a { 
+    font-size: 0.8em;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    transition: color 1000ms linear;
+}
+
+.light a {
+    color: #494949;
+}
+
+.dark a {
+    color: #cacaca;
+}
