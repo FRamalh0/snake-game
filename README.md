@@ -2,7 +2,7 @@
 
 This Snake Game was made with Angular and can played in your browser.
 
-![Layout of the website](https://i.imgur.com/ATROpFd.gif)
+![Layout of the website](https://i.imgur.com/ATROpFd.gif =250x250)
 
 Demo: [Click here!](https://framalh0.github.io/snake-game/)
 
@@ -40,10 +40,12 @@ If the snake fills the entire board, the player win with the maximum score possi
 ## 📕 Features
 
 This projects have a Dark mode mode for the health and well-being of the player. And it look cooler 🕶️...
-![Dark mode](https://i.imgur.com/TzAsJbK.gif)
+
+![Dark mode](https://i.imgur.com/TzAsJbK.gif =250x250)
 
 If the user don't have a physical keyboard and wants to play it, he can use "keys on screen" by clicking on the bottom right bottom.
-![Toggle the keys on screen](https://i.imgur.com/PahqzvY.gif)
+
+![Toggle the keys on screen](https://i.imgur.com/PahqzvY.gif =250x250)
 
 This code allow to change some variables in order to change the experience (increase the size, game speed, initial snake size, others).
 
