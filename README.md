@@ -1,6 +1,6 @@
 # 🐍 Snake Game
 
-This Snake Game was made with Angular and can played in your browser.
+This Snake Game was made with Angular and can be played in your browser.
 
 <p align="center"><img src="https://i.imgur.com/ATROpFd.gif" width="400" height="400" alt="Layout of the website"></p>
 
